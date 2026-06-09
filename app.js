@@ -127,7 +127,6 @@ function computeSingleMatchStats(teamId, match) {
   };
 }
 
-
 function computeGroupTable(teamIds, teamList, matches) {
   const table = {};
 
@@ -259,9 +258,6 @@ function computeGroupStandingsGeneric(groupId, teams, matches) {
 
   return { groupId, table: rows };
 }
-
-
-
 
 function computeAllGroupStandings(worldcup) {
   const groups = worldcup?.teams?.groups || [];
