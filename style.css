@@ -528,3 +528,131 @@ footer p {
   text-overflow: ellipsis;
 }
 
+/* MOBILE LAYOUT */
+@media (max-width: 600px) {
+
+  /* Global scaling */
+  body {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Group tables */
+  .group-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .group-table {
+    width: 100%;
+    border-spacing: 0;
+    font-size: 13px;
+  }
+
+  .group-table th,
+  .group-table td {
+    padding: 6px 4px;
+    text-align: center;
+  }
+
+  /* Match rows */
+  .match-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+
+  .match-teams {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .match-score {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Knockout bracket */
+  .knockout-round {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .knockout-match {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+  }
+
+  .knockout-team {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+
+  /* Final / Third place */
+  .final-container,
+  .thirdplace-container {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .final-score,
+  .thirdplace-score {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* Buttons */
+  button,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    margin: 6px 0;
+    border-radius: 6px;
+  }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  /* Team flags / icons */
+  .team-flag {
+    width: 20px;
+    height: 14px;
+  }
+
+  /* Fix overflow */
+  .scroll-x {
+    overflow-x: auto;
+  }
+}
+
+

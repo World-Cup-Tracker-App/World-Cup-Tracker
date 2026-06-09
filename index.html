@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>World Cup Tracker / Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,16 +14,16 @@
 
   <!-- Finished World Cup Loader -->
   <div class="header-row">
-    <span>FINISHED WORLD CUP YEAR:</span>
+    <label>FINISHED WORLD CUP YEAR:</label>
     <select id="worldcupDropdown"></select>
   </div>
 
   <!-- Editable World Cup Creator -->
   <div class="header-row">
-    <span>NEW WORLD CUP YEAR:</span>
+    <label>NEW WORLD CUP YEAR:</label>
     <input type="text" id="editYear" placeholder="e.g. 2026">
 
-    <span>FORMAT:</span>
+    <label>FORMAT:</label>
     <select id="formatDropdown">
       <option value="">--SELECT FORMAT--</option>
       <option value="24">24 Teams</option>
@@ -42,7 +44,6 @@
     <section id="teamsPanel">
       <h2>Teams (Groups)</h2>
 
-      <!-- Editable World Cup teams -->
       <div id="editTeams"></div>
 
       <div class="section-actions">
@@ -55,7 +56,6 @@
     <section id="seasonsPanel">
       <h2>Season</h2>
 
-      <!-- Finished World Cup View (Tabs + Content) -->
       <div id="finishedView"></div>
 
       <div class="section-actions">
